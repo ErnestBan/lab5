@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-default">
+
+<div class="panel-heading">candy</div>
+
+<div class="panel-body">
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @candy.name %>
+</p>
+
+
+</div>
+
+<div class="panel-footer">
+
+<%= link_to 'Edit', edit_candy_path(@candy) ,class:"btn btn-xs btn-danger" %> |
+<%= link_to 'Back', candies_path , class:"btn btn-xs btn-danger" %>
+
+</div></div>

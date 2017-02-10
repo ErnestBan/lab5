@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab5</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body="container">
+    <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">lab5</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Candies</a></li>
+      <li><a href="/static_pages/home">Home</a></li>
+      <li><a href="/static_pages/help">Help</a></li>
+      <li><a href="/static_pages/about">About</a></li>
+    </ul>
+</nav>
+<div><%= yield %></div>
+  </body>
+</html>
